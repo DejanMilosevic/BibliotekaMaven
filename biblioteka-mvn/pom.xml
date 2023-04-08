@@ -64,6 +64,16 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+						<archive>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<mainClass>
+									rs.ac.bg.fon.ai.biblioteka_mvn.gui.BibliotekaGUI
+								</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
 					<version>3.0.2</version>
 				</plugin>
 				<plugin>
